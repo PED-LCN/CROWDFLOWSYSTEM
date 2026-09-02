@@ -1,0 +1,16 @@
+# Ambientes virtuais Python
+.venv/
+venv/
+env/
+
+# Artefatos e caches Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+
+# Configurações locais
+.env
+.env.*
+!.env.example
+

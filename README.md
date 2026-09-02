@@ -15,9 +15,29 @@ qual seja possível discutir a hipótese do projeto com um orientador acadêmico
 - três cenários reproduzíveis;
 - execução visual e execução sem interface para testes.
 
-## Executar
+## Preparar o ambiente virtual
 
-Requer Python 3.10 ou superior. Não há dependências externas.
+Requer Python 3.10 ou superior. No PowerShell, execute:
+
+```powershell
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+python -m pip install --upgrade pip
+```
+
+No Linux ou macOS:
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+python -m pip install --upgrade pip
+```
+
+O prompt do terminal exibirá `(.venv)` enquanto o ambiente estiver ativo. O
+MVP 0 não possui dependências externas, portanto não é necessário instalar um
+arquivo `requirements.txt` neste momento.
+
+## Executar
 
 ```powershell
 python -m crowdflow
@@ -64,3 +84,8 @@ perguntas de pesquisa e próximos experimentos sugeridos.
 python -m unittest discover -s tests -v
 ```
 
+Ao terminar, saia do ambiente com:
+
+```powershell
+deactivate
+```
