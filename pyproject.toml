@@ -1,0 +1,9 @@
+[project]
+name = "crowdflowsystem"
+version = "0.1.0"
+description = "MVP 0 de uma plataforma experimental para campos de multidão"
+requires-python = ">=3.10"
+
+[tool.ruff]
+line-length = 100
+
